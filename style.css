@@ -12,3 +12,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     filter: blur(0px);
     transition: 0.3s;
 }
+.run-txt{
+  position: relative;
+}
+.run-txt::after{
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: transparent;
+  background-color: yellow;
+  width: 98%;
+  animation: show 3s steps(35) alternate infinite,
+              line 0.5s infinite;
+}
+@keyframes show{
+  to{
+    width: 0%;
+  }
+}
+@keyframes line{
+  50%{
+    color: transparent;
+  }
+}
