@@ -6,11 +6,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-size: cover;
   background-image: url('images/rm.jpg');
   min-height: 100%;
-  filter:blur(10px)
+  filter:blur(10px);
+  transition: 0.4s;
 }
 .bgimg:hover{
     filter: blur(0px);
-    transition: 0.3s;
+    
 }
 .run-txt{
   position: relative;
