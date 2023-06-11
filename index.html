@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
 </head>
 <body>
 
@@ -228,11 +230,11 @@
     <img src="images/it.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
    
     <p>Lets get in touch. Send me a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+    <form action="?" onsubmit="return sender()">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" id="name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email" id="email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" id="subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" id="message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-hover-text-white w3-hover-yellow w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -244,12 +246,10 @@
   
   <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>    
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/razmik-m-49b936158/"target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     <p class="w3-medium">W3</p>
   <!-- End footer -->
   </footer>
@@ -268,6 +268,8 @@ function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+
+
 
 </body>
 </html>
