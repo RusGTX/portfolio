@@ -37,6 +37,17 @@
   <!-- Menu icon to open sidebar -->
   <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-white w3-hover-yellow" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
+  <!--weather API-->
+  <div class="weatherBox">
+      
+      <img src="" alt="" class="image">
+      <p>Yerevan</p>
+      <p class="temperature"></p>
+      <p class="description"></p>
+      <p class="humidity"></p>
+      <p class="wind"></p>
+  </div>
+
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
     <h1 class="w3-jumbo run-txt"><b>Razmik Madoyan</b></h1>
@@ -268,7 +279,7 @@ function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-
+<script src="app.js"></script>
 
 
 </body>
