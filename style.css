@@ -1,5 +1,9 @@
-body, h1,h2,h3,h4,h5,h6,p {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
+body, h1,h2,h3,h4,h5,h6,p {
+  font-family: "Montserrat", sans-serif
+}
+.w3-row-padding img {
+  margin-bottom: 12px
+}
 .bgimg {
   background-position: center;
   background-repeat: no-repeat;
@@ -36,41 +40,41 @@ body, h1,h2,h3,h4,h5,h6,p {font-family: "Montserrat", sans-serif}
     color: transparent;
   }
 }
-/* #mySidebar{
-  z-index: 4;
-  position: relative;
-} */
+#mySidebar{
+  z-index: 11111;
+}
 
 /*------weather Style--------*/
 
-/* .weatherBox{
+.weatherBox{
   position: relative;
-  width: 420px;
-  height: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  height: auto;
   background-color: white;
-  padding: 28px 13px;
+  padding: 10px 13px;
   overflow: hidden;
   border-radius: 18px;  
   transition: 0.6s ease-out;    
 }
 
-.weatherBox{
-  display: flex;
-}
 .weatherBox p{
-  margin: 3px;
-  z-index: 3;    
+  margin: 8px;
+  z-index: 3;
+  line-height: 1.5em;    
   position: relative;
+  font-size: 14px;  
 }
 .weatherBox :nth-child(2){    
-  font-weight: bolder;
-  z-index: 2;
+  font-weight: bold;  
 }
 
 .weatherBox .image{
   position: absolute;
-  top: 0;
-  left: 0;  
+  top: -15px;
+  left: 0;
+  z-index: 2;
   width: 78px;
   height: 78px;
 }
@@ -80,9 +84,5 @@ body, h1,h2,h3,h4,h5,h6,p {font-family: "Montserrat", sans-serif}
 {
   text-transform: capitalize;
 }
- */
 
 
- .w3-bar li:not(:first-child){
-  vertical-align: sub;
- }
