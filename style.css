@@ -43,7 +43,7 @@ body, h1,h2,h3,h4,h5,h6,p {font-family: "Montserrat", sans-serif}
 
 /*------weather Style--------*/
 
-.weatherBox{
+/* .weatherBox{
   position: relative;
   width: 420px;
   height: 30px;
@@ -80,3 +80,9 @@ body, h1,h2,h3,h4,h5,h6,p {font-family: "Montserrat", sans-serif}
 {
   text-transform: capitalize;
 }
+ */
+
+
+ .w3-bar li:not(:first-child){
+  vertical-align: sub;
+ }
