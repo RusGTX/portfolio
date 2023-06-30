@@ -36,9 +36,10 @@ body, h1,h2,h3,h4,h5,h6,p {font-family: "Montserrat", sans-serif}
     color: transparent;
   }
 }
-#mySidebar{
-  z-index: 11111;
-}
+/* #mySidebar{
+  z-index: 4;
+  position: relative;
+} */
 
 /*------weather Style--------*/
 
@@ -58,20 +59,18 @@ body, h1,h2,h3,h4,h5,h6,p {font-family: "Montserrat", sans-serif}
 }
 .weatherBox p{
   margin: 3px;
-  z-index: 3;
-  line-height: 1.5em;
-  display:  inline-block;   
+  z-index: 3;    
   position: relative;
 }
 .weatherBox :nth-child(2){    
   font-weight: bolder;
+  z-index: 2;
 }
 
 .weatherBox .image{
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 2;
+  left: 0;  
   width: 78px;
   height: 78px;
 }
