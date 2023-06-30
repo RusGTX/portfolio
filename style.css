@@ -60,7 +60,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .weatherBox p{
   margin: 3px;
   z-index: 1111;
-  
+  position: relative;
 }
 .weatherBox :nth-child(2){    
   font-weight: bolder;
@@ -70,7 +70,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: -1;
   width: 78px;
   height: 78px;
 }
