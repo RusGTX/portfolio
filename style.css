@@ -62,8 +62,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   z-index: 1111;
   
 }
-.weatherBox p:nth-child(1){
-  font-size: 22px;
+.weatherBox :nth-child(2){    
+  font-weight: bolder;
 }
 
 .weatherBox .image{
