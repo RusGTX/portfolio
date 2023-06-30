@@ -40,10 +40,10 @@ function weatherApp(){
                     image.src = '';
             }
 
-            temperature.innerHTML = `${parseInt(json.main.temp)} <span>°C</span>`;
+            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
-            humidity.innerHTML = `humidity ${json.main.humidity}%`;
-            wind.innerHTML = `wind ${parseInt(json.wind.speed)} km/h`;
+            humidity.innerHTML = `humidity - ${json.main.humidity}%`;
+            wind.innerHTML = `wind - ${parseInt(json.wind.speed)} km/h`;
 
             
 
