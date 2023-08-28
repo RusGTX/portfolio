@@ -1,4 +1,4 @@
-//bot token
+/* //bot token
 var telegram_bot_id = "5420017360:AAE7rVL84rAEYf5Vc8NSWkqrnjp6xM29jZY";
 //chat id
 var chat_id = -528717921;
@@ -40,3 +40,17 @@ var sender = function () {
 
     return false;
 };
+ */
+
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("mySidebar").style.zIndex = "5";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+
+

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 
-<script src="script.js"></script>
+
 </head>
 <body>
 
@@ -249,10 +249,10 @@
     <img src="images/it.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
    
     <p>Lets get in touch. Send me a message:</p>
-    <form action="?" onsubmit="return sender()">
+    <form>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" id="name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email" id="email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" id="subject"></p>
+      <!-- <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" id="subject"></p> -->
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" id="message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-hover-text-white w3-hover-yellow w3-padding-large" type="submit">
@@ -276,20 +276,9 @@
 <!-- END PAGE CONTENT -->
 </div>
 
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("mySidebar").style.zIndex = "5";
-}
 
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
 <script src="app.js"></script>
-
+<script src="script.js"></script>
 
 </body>
 </html>
