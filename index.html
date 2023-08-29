@@ -46,12 +46,6 @@
       <p class="humidity"></p>
       <p class="wind"></p>
   </div> 
-  
-  
-  
-
-
-
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
@@ -92,13 +86,9 @@
             <p>WebFlow</p>
           </div>
         </div>
-       
-
       </div>
 
-      <div class="w3-half">
-
-       
+      <div class="w3-half">       
         <div class="w3-card-4 w3-margin">
           <a href="https://rusgtx.github.io/" target="_blank"><img src="images/dpl.png" style="width:100%"></a>
           <div class="w3-container w3-center">
@@ -112,9 +102,6 @@
             <p>Contact Form</p>
           </div>
         </div>     
-        
-        
-      
         
       </div>
     <!-- End photo grid -->
@@ -223,16 +210,20 @@
     <img src="images/it.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
    
     <p>Lets get in touch. Send me a message:</p>
-    <form>
+    <form method="post" action="#">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" id="name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email" id="email"></p>
       <!-- <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" id="subject"></p> -->
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" id="message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-hover-text-white w3-hover-yellow w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey w3-hover-text-white w3-hover-yellow w3-padding-large" type="submit" onclick="messageSent()">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
+      <div class="message">
+        <div class="success" id="success">Your message successfully sent</div>
+        <div class="danger" id="danger">Fields Can't be empty</div>
+      </div>
     </form>
   <!-- End Contact Section -->
   </div>  

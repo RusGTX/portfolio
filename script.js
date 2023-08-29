@@ -53,4 +53,29 @@ function openNav() {
     document.getElementById("mySidebar").style.display = "none";
   }
 
+//Success Message
+function messageSent(e){
+    e.preventDefault();       
+
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let msg = document.getElementById('message').value;
+
+    const success = document.getElementById('success');
+    const danger = docuemnt.getElementById('danger');
+
+    if(name.value === '' || email.value === '' || msg.value === ''){
+        danger.style.display = 'block';
+    }else{
+
+        setTimeout(()=>{
+            name.value = '';
+            email.value = '';
+            msg.value = '';
+        }, 2000);
+
+        success.style.display = 'block';
+    }
+
+}
 
